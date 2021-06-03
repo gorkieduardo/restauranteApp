@@ -13,7 +13,9 @@ import FormularioPlatillo from './views/FormularioPlatillo';
 import ResumenPedido from './views/ResumenPedido';
 import ProgresoPedido from './views/ProgresoPedido';
 
+//importar componetnes
 
+import BotonResumen from './components/ui/BotonResumen';
 // importar state de context
 import FirebaseState from './context/firebase/firebaseState';
 import PedidoState from './context/pedidos/pedidosState';
@@ -49,6 +51,7 @@ const App = () => {
                 component={Menu}
                 options={{
                   title: 'Menu',
+                  headerRight: props => <BotonResumen />
                 }}
               />
               <Stack.Screen
