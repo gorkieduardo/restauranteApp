@@ -21,10 +21,7 @@ const FirebaseState = props => {
 
     // Función que se ejecuta para traer los productos
     const obtenerProductos = () => {
-  
-
-        // consultar firebase
-            
+        // consultar firebase    
         firebase.db
             .collection('productos')
             .where('existencia', '==', true) // traer solo los que esten en existencia
